@@ -1,0 +1,405 @@
+/* ===========================
+   A-Z SPORTS PAGE
+=========================== */
+
+.sports-page {
+    background: url("../../assets/images/sports/sports-turf.jpeg") center/cover no-repeat fixed;
+    min-height: 100vh;
+    padding: 3rem 6rem 3rem 6rem;;
+}
+
+/* Increase page heading size here */
+.sports-title {
+    color: #fff;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 2.8rem;
+}
+
+/* ===========================
+   SPORTS GRID
+=========================== */
+
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.sport-card {
+    background: #fff;
+    border-radius: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,.2);
+
+}
+
+.sport-card:hover {
+    transform: translateY(-0.45rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.35);
+}
+
+.sport-image {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+.sport-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Increase card title size here */
+.sport-content h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0;
+}
+
+/* ===========================
+   MODAL
+=========================== */
+
+.sport-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    z-index: 9999;
+    animation: fadeIn .3s ease;
+}
+
+.sport-modal {
+    width: 50rem;
+    max-width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+    animation: zoomIn .3s ease;
+}
+
+.modal-image {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: .8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Increase popup sport name here */
+.sport-modal h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+
+/* Increase Information heading here */
+.sport-modal h4 {
+    color: #0d6efd;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Increase description size here */
+.sport-modal p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: .9rem;
+}
+
+/* Campus & Type label */
+.sport-modal strong {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #dc3545;
+    color: #fff;
+
+    font-size: 1.3rem;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.close-btn:hover {
+    background: #bb2d3b;
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes zoomIn {
+
+    from{
+        transform:scale(.8);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+/* Large Laptop */
+
+@media (max-width:90rem){
+
+    .sports-grid{
+        grid-template-columns:repeat(5,1fr);
+    }
+
+}
+
+/* Laptop */
+
+@media (max-width:75rem){
+
+    .sports-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width:62rem){
+
+    .sports-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+/* Small Tablet */
+
+@media (max-width:48rem){
+
+    .sports-page{
+        padding:6rem 1.2rem 2rem;
+    }
+
+    .sports-title{
+        font-size:2.2rem;
+    }
+
+    .sports-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:1.2rem;
+    }
+
+    .sport-image{
+        height:10rem;
+    }
+
+    .sport-content h4{
+        font-size:1rem;
+    }
+
+    .modal-image{
+        height:18rem;
+    }
+
+    .sport-modal{
+        padding:1.5rem;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:36rem){
+
+    .sports-page{
+        padding:5.8rem 1rem 2rem;
+    }
+
+    .sports-title{
+        font-size:1.8rem;
+    }
+
+    .sports-grid{
+        grid-template-columns:1fr;
+    }
+
+    .sport-image{
+        height:12rem;
+    }
+
+    .sport-content h4{
+        font-size:1.15rem;
+    }
+
+    .modal-image{
+        height:14rem;
+    }
+
+    .sport-modal h2{
+        font-size:1.6rem;
+    }
+
+    .sport-modal h4{
+        font-size:1.2rem;
+    }
+
+    .sport-modal p{
+        font-size:.95rem;
+    }
+
+}
+
+/* ===========================
+   VIEW MORE BUTTON
+=========================== */
+
+.view-more-section{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:3rem;
+}
+
+.view-btn{
+    background:#ff7519;
+    color:#fff;
+    border:none;
+    padding:1rem 2.5rem;
+    border-radius:3rem;
+    font-size:1rem;
+    font-weight:700;
+    font-size:1.2rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.view-btn:hover{
+    background:#ff932d;
+    transform:translateY(-.2rem);
+
+}
+
+.arrow{
+    display:inline-block;
+    font-size:1rem;
+    margin-left:.35rem;
+    transform:translateY(-0.08rem);
+}
+
+
+@media(max-width:48rem){
+    .view-btn{
+        width:100%;
+        max-width:18rem;
+
+    }
+
+}
+
+
+
+
+/* Safety Measures */
+
+.safety-list{
+    margin-top:2.5rem;
+}
+
+.safety-item{
+    display:flex;
+    gap:1.5rem;
+    margin-bottom:2rem;
+    padding:1.5rem;
+    background:#fff;
+    border-radius:1rem;
+    box-shadow:0 .35rem 1rem rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.safety-item:hover{
+    transform:translateY(-.3rem);
+}
+
+.number{
+    min-width:4rem;
+    height:4rem;
+    background:#ff7519;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.3rem;
+    font-weight:700;
+}
+
+.safety-item h3{
+    color:#0d6efd;
+    margin-bottom:.6rem;
+}
+
+.safety-item p{
+    color:#555;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+    .safety-item{
+        flex-direction:column;
+        text-align:center;
+        align-items:center;
+    }
+
+}
+
+

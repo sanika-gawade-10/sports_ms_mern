@@ -1,0 +1,86 @@
+.notice-management {
+  padding: 30px;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+}
+
+.notice-header {
+  margin-bottom: 30px;
+}
+
+.notice-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #222;
+}
+
+.notice-header p {
+  margin-top: 8px;
+  color: #777;
+  font-size: 15px;
+}
+
+.notice-form-card {
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.notice-form-card h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 21px;
+  color: #222;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #d5d5d5;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.form-group input[type="text"]:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.notice-submit-btn {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.notice-submit-btn:hover {
+  opacity: 0.9;
+}
+
+.notice-message {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}

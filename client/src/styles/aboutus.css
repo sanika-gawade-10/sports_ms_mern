@@ -1,0 +1,339 @@
+/* ===========================
+   ABOUT US PAGE
+=========================== */
+
+.about-page{
+    background:#F4FBFF;
+    color:#222;
+    font-family:Arial,sans-serif;
+}
+
+.about-page section{
+    max-width:1100px;
+    margin:auto;
+    padding:45px 20px;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+    color:#fff;
+    background:url("./images/carousel/about_pic.png")
+    center/cover no-repeat;
+}
+
+.hero-content h1{
+    font-size:3.4rem;
+    font-weight:700;
+    margin-bottom:1rem;
+    text-shadow:0 4px 10px rgba(0,0,0,.45);
+}
+
+.hero-content p{
+    max-width:700px;
+    font-size:1.25rem;
+    margin:auto;
+    line-height:1.7;
+}
+
+/* ===========================
+   COMMON
+=========================== */
+
+.title{
+    text-align:center;
+    font-size:2.2rem;
+    color:#0A4C9C;
+    margin-bottom:2rem;
+    font-weight:700;
+}
+
+.row{
+    display:flex;
+    align-items:center;
+    gap:2rem;
+    flex-wrap:wrap;
+}
+
+.row img{
+    width:100%;
+    max-width:470px;
+    border-radius:14px;
+}
+
+.text{
+    flex:1;
+}
+
+.text p{
+    font-size:1.08rem;
+    line-height:1.9;
+    margin-bottom:1rem;
+}
+
+.nep-text{
+    text-align:center;
+    max-width:1000px;
+    margin:auto;
+    line-height:2;
+    font-size:1.08rem;
+}
+
+.btn-center{
+    text-align:center;
+    margin-top:2rem;
+}
+
+.btn{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:.9rem 2rem;
+    border-radius:8px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1e40af;
+}
+
+/* ===========================
+   POPUP
+=========================== */
+
+.popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.popup-box{
+    background:#fff;
+    width:360px;
+    padding:2rem;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.popup-box h3{
+    color:#0A4C9C;
+    margin-bottom:1rem;
+}
+
+.popup-box p{
+    margin-bottom:1.5rem;
+    font-size:1rem;
+}
+
+.popup-box button{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:.7rem 2rem;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+
+/* ===========================
+   COACHES
+=========================== */
+
+.coach-swiper{
+    width:90%;
+    padding:2.5rem 0;
+}
+
+.coach-card{
+    height:200px;
+    border-radius:20px;
+    padding:2rem;
+    color:#fff;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+    transition:.35s;
+}
+
+.coach-card:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+.coach-card h3{
+    font-size:1.3rem;
+    margin-bottom:.8rem;
+}
+
+.coach-card p{
+    opacity:.9;
+}
+
+.swiper-slide-active .coach-card{
+    transform:scale(1.08);
+}
+
+/* ===========================
+   STATS
+=========================== */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:2.5rem;
+    flex-wrap:wrap;
+    margin-top:2rem;
+}
+
+.stat-box{
+    width:200px;
+    padding:1.8rem;
+    text-align:center;
+    background:#CDEAFE;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.stat-box h1{
+    margin:0;
+    font-size:2.6rem;
+    color:#0A4C9C;
+}
+
+.stat-box p{
+    margin-top:.6rem;
+    font-weight:600;
+}
+
+
+/* ===========================
+   VIDEO
+=========================== */
+
+.video-section{
+    text-align:center;
+}
+
+.video-section video{
+    width:100%;
+    max-width:1100px;
+    border-radius:12px;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:992px){
+
+    .hero{
+        height:50vh;
+    }
+
+    .hero-content h1{
+        font-size:2.7rem;
+    }
+
+    .coach-swiper{
+        width:95%;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .row{
+        flex-direction:column;
+    }
+
+    .row img{
+        max-width:100%;
+    }
+
+    .hero{
+        height:45vh;
+    }
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .title{
+        font-size:1.8rem;
+    }
+
+    .text p,
+    .nep-text{
+        font-size:1rem;
+    }
+
+    .stat-box{
+        width:170px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .about-page section{
+        padding:35px 15px;
+    }
+
+    .hero{
+        height:40vh;
+    }
+
+    .hero-content h1{
+        font-size:1.9rem;
+    }
+
+    .hero-content p{
+        font-size:.95rem;
+    }
+
+    .coach-card{
+        height:180px;
+        padding:1.5rem;
+    }
+
+    .achievement-card img{
+        height:190px;
+    }
+
+    .stat-box{
+        width:100%;
+        max-width:250px;
+    }
+
+    .video-section video{
+        border-radius:10px;
+    }
+
+}
+

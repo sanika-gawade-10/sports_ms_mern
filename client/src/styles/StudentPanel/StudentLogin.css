@@ -1,0 +1,218 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.student-login-page {
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.login-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 30rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(0.8rem);
+  -webkit-backdrop-filter: blur(0.8rem);
+  box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.35);
+  text-align: center;
+  color: #fff;
+}
+
+.login-container h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.9rem 3.5rem 0.9rem 3rem;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+}
+
+.input-group input::placeholder {
+  color: #777;
+}
+
+.emoji-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  pointer-events: none;
+  user-select: none;
+  z-index: 2;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #1e3a8a;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-error {
+  color: #ffb4b4;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.6rem;
+  background: #dfb613;
+  color: #1e3a8a;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #dfb613;
+  transform: scale(1.03);
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.login-links {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.login-links a {
+  color: #dfb613;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .student-login-page {
+    padding: 1.5rem;
+  }
+
+  .login-container {
+    max-width: 22rem;
+    padding: 2rem;
+  }
+
+  .login-container h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .student-login-page {
+    padding: 1rem;
+  }
+
+  .login-container {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .login-container h2 {
+    font-size: 1.45rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .input-group input {
+    font-size: 0.95rem;
+    padding: 0.8rem 3rem 0.8rem 2.5rem;
+  }
+
+  .emoji-icon {
+    left: 0.8rem;
+    font-size: 1.1rem;
+  }
+
+  .login-btn {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .student-login-page {
+    padding: 0.75rem;
+  }
+
+  .login-container {
+    padding: 1.2rem;
+  }
+
+  .login-container h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .input-group {
+    margin-bottom: 1rem;
+  }
+
+  .input-group input {
+    font-size: 0.9rem;
+    padding: 0.75rem 2.8rem 0.75rem 2.4rem;
+  }
+
+  .login-btn {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+}

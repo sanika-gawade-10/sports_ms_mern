@@ -1,0 +1,193 @@
+
+.admin-participation,
+.admin-participation * {
+  box-sizing: border-box;
+}
+
+.admin-participation {
+  width: 100%;
+  min-width: 0;
+  color: #222;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.admin-participation h2 {
+  margin: 0 0 1.1rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.admin-participation-card {
+  width: 100%;
+  padding: 1.25rem;
+  margin-bottom: 1.125rem;
+  background: #fff;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* FILTERS */
+
+.admin-participation-filters {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.25rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.admin-participation-filters select,
+.admin-participation-filters input {
+  flex: 0 0 auto;
+  min-width: 7rem;
+  height: 2.4rem;
+  padding: 0 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.4rem;
+  background: #fff;
+  outline: none;
+  font-size: 0.85rem;
+}
+
+.admin-participation-filters input {
+  min-width: 8rem;
+}
+
+.admin-participation-filters select:focus,
+.admin-participation-filters input:focus {
+  border-color: #1e3a8a;
+}
+
+.admin-participation-search {
+  flex: 0 0 auto;
+  height: 2.4rem;
+  padding: 0 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: none;
+  border-radius: 0.4rem;
+  background: #1e3a8a;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.admin-participation-search:hover {
+  background: #162f72;
+}
+
+/* TABLE */
+
+.admin-participation-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.admin-participation-table {
+  width: 100%;
+  min-width: 60rem;
+  border-collapse: collapse;
+}
+
+.admin-participation-table th {
+  padding: 0.7rem;
+  background: #1e3a8a;
+  color: #fff;
+  text-align: center;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.admin-participation-table td {
+  padding: 0.7rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.admin-participation-table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.admin-participation-table tbody tr:hover {
+  background: #eef4ff;
+}
+
+.admin-participation-empty,
+.admin-participation-error {
+  padding: 1.5rem !important;
+  text-align: center !important;
+  color: #666;
+}
+
+.admin-participation-error {
+  color: #dc2626;
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  .admin-participation-card {
+    padding: 1rem;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .admin-participation h2 {
+    font-size: 1.35rem;
+  }
+
+  .admin-participation-filters {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: visible;
+    gap: 0.7rem;
+  }
+
+  .admin-participation-filters select,
+  .admin-participation-filters input,
+  .admin-participation-search {
+    width: 100%;
+    min-width: 0;
+    height: 2.5rem;
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .admin-participation h2 {
+    font-size: 1.2rem;
+  }
+
+  .admin-participation-card {
+    padding: 0.75rem;
+  }
+
+  .admin-participation-filters {
+    gap: 0.5rem;
+  }
+
+  .admin-participation-filters select,
+  .admin-participation-filters input,
+  .admin-participation-search {
+    height: 2.25rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .admin-participation-filters {
+    grid-template-columns: 1fr;
+  }
+}

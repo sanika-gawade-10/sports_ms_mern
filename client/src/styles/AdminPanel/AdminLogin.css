@@ -1,0 +1,307 @@
+/* ======================================================
+   ADMIN LOGIN PAGE
+   Sathaye College Sports Management System
+   ====================================================== */
+
+
+/* ===========================
+   RESET
+   =========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ======================================================
+   MAIN PAGE
+   ====================================================== */
+
+.admin-login-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  padding: 2rem;
+
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+/* ======================================================
+   DARK OVERLAY
+   ====================================================== */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: 1;
+}
+
+
+/* ======================================================
+   LOGIN CARD
+   ====================================================== */
+
+.login-container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 30rem;
+
+  padding: 2rem;
+
+  border-radius: 1rem;
+
+  background: rgba(255, 255, 255, 0.10);
+
+  backdrop-filter: blur(0.8rem);
+  -webkit-backdrop-filter: blur(0.8rem);
+
+  box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.35);
+
+  text-align: center;
+
+  color: #fff;
+}
+
+
+/* ======================================================
+   HEADING
+   ====================================================== */
+
+.login-container h2 {
+  font-size: 1.8rem;
+
+  font-weight: 700;
+
+  margin-bottom: 1.8rem;
+}
+
+
+/* ======================================================
+   INPUT GROUP
+   ====================================================== */
+
+.input-group {
+  position: relative;
+
+  width: 100%;
+
+  margin-bottom: 1.2rem;
+}
+
+
+/* ======================================================
+   INPUT
+   ====================================================== */
+
+.input-group input {
+  width: 100%;
+
+  padding: 0.9rem 1rem 0.9rem 3rem;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 0.6rem;
+
+  font-size: 1rem;
+
+  background: #fff;
+
+  color: #222;
+}
+
+
+/* ======================================================
+   PLACEHOLDER
+   ====================================================== */
+
+.input-group input::placeholder {
+  color: #777;
+}
+
+
+/* ======================================================
+   EMOJI ICON
+   ====================================================== */
+
+.emoji-icon {
+  position: absolute;
+
+  left: 1rem;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  font-size: 1.2rem;
+
+  pointer-events: none;
+
+  user-select: none;
+
+  z-index: 2;
+}
+
+
+/* ======================================================
+   LOGIN BUTTON
+   ====================================================== */
+
+.login-btn {
+  width: 100%;
+
+  padding: 0.8rem;
+
+  margin-top: 0.5rem;
+
+  border: none;
+
+  border-radius: 0.6rem;
+
+  background: #dfb613;
+
+  color: #1e3a8a;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+
+.login-btn:hover {
+  background: #dfb613;
+
+  transform: scale(1.03);
+}
+
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+
+/* ======================================================
+   TABLET
+   ====================================================== */
+
+@media (max-width: 768px) {
+
+  .admin-login-page {
+    padding: 1.5rem;
+  }
+
+  .login-container {
+    max-width: 22rem;
+
+    padding: 2rem;
+  }
+
+  .login-container h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* ======================================================
+   MOBILE
+   ====================================================== */
+
+@media (max-width: 480px) {
+
+  .admin-login-page {
+    padding: 1rem;
+  }
+
+  .login-container {
+    width: 100%;
+
+    max-width: 100%;
+
+    padding: 1.5rem;
+  }
+
+  .login-container h2 {
+    font-size: 1.45rem;
+
+    margin-bottom: 1.5rem;
+  }
+
+  .input-group input {
+    font-size: 0.95rem;
+
+    padding: 0.8rem 0.9rem 0.8rem 2.5rem;
+  }
+
+  .emoji-icon {
+    left: 0.8rem;
+
+    font-size: 1.1rem;
+  }
+
+  .login-btn {
+    padding: 0.75rem;
+
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ======================================================
+   VERY SMALL DEVICES
+   ====================================================== */
+
+@media (max-width: 320px) {
+
+  .admin-login-page {
+    padding: 0.75rem;
+  }
+
+  .login-container {
+    padding: 1.2rem;
+  }
+
+  .login-container h2 {
+    font-size: 1.3rem;
+
+    margin-bottom: 1.3rem;
+  }
+
+  .input-group {
+    margin-bottom: 1rem;
+  }
+
+  .input-group input {
+    font-size: 0.9rem;
+
+    padding: 0.75rem 0.8rem 0.75rem 2.4rem;
+  }
+
+  .login-btn {
+    padding: 0.7rem;
+
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,291 @@
+/* ======================================================
+   ADMIN DASHBOARD
+====================================================== */
+
+.admin-dashboard {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background: #f1f5f9;
+}
+
+
+/* ======================================================
+   FIXED SIDEBAR
+====================================================== */
+
+.admin-sidebar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 14rem;
+  height: 100vh;
+
+  box-sizing: border-box;
+
+  background: #1e3a8a;
+  color: white;
+
+  padding: 1rem;
+
+  overflow-y: auto;
+
+  z-index: 1000;
+}
+
+
+/* ======================================================
+   PROFILE
+====================================================== */
+
+.admin-profile {
+  text-align: center;
+
+  margin-bottom: 2rem;
+
+  padding-top: 1rem;
+}
+
+
+.admin-profile-icon {
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 0.7rem;
+}
+
+
+.admin-profile-icon svg {
+  font-size: 7rem;
+}
+
+
+.admin-profile p {
+  font-size: 1.7rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+
+
+/* ======================================================
+   MENU
+====================================================== */
+
+.admin-menu {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+
+
+.admin-menu button {
+  display: block;
+
+  width: 100%;
+
+  padding: 0.7rem;
+
+  border: none;
+
+  border-radius: 0.3rem;
+
+  background: transparent;
+
+  color: white;
+
+  text-align: left;
+
+  font-size: 1rem;
+
+  font-family: inherit;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.admin-menu button.active {
+  background: #62a1f8;
+}
+
+
+/* ======================================================
+   LOGOUT
+====================================================== */
+
+.admin-menu .logout-button {
+  margin-top: 1rem;
+
+  background: #dc2626;
+
+  color: white;
+}
+
+
+.admin-menu .logout-button:hover {
+  background: #b91c1c;
+}
+
+
+/* ======================================================
+   MAIN CONTENT
+====================================================== */
+
+.admin-main {
+  margin-left: 14rem;
+
+  min-height: 100vh;
+
+  width: calc(100% - 14rem);
+
+  box-sizing: border-box;
+
+  padding: 2rem;
+
+  background: #f1f5f9;
+
+  overflow-x: auto;
+}
+
+
+/* ======================================================
+   HOME
+====================================================== */
+
+.dashboard-home {
+  background: white;
+
+  padding: 2rem;
+
+  border-radius: 0.5rem;
+
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+.dashboard-home h2 {
+  margin-top: 0;
+
+  margin-bottom: 1rem;
+}
+
+
+.dashboard-home p {
+  line-height: 1.6;
+
+  color: #475569;
+}
+
+
+/* ======================================================
+   SECTIONS
+====================================================== */
+
+.dashboard-section {
+  background: white;
+
+  padding: 2rem;
+
+  border-radius: 0.5rem;
+
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+.dashboard-section h2 {
+  margin-top: 0;
+
+  margin-bottom: 0.8rem;
+
+  color: #1e293b;
+}
+
+
+.dashboard-section p {
+  color: #475569;
+
+  line-height: 1.6;
+}
+
+
+/* ======================================================
+   TEMPORARY PLACEHOLDER
+====================================================== */
+
+.coming-soon {
+  margin-top: 2rem;
+
+  padding: 1.5rem;
+
+  border-radius: 0.4rem;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  color: #64748b;
+}
+
+
+/* ======================================================
+   LOADING
+====================================================== */
+
+.admin-loading {
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-family: sans-serif;
+
+  background: #f1f5f9;
+}
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 768px) {
+
+  .admin-sidebar {
+    width: 12rem;
+  }
+
+  .admin-main {
+    margin-left: 12rem;
+
+    width: calc(100% - 12rem);
+
+    padding: 1.2rem;
+  }
+
+  .admin-profile p {
+    font-size: 1.2rem;
+  }
+
+  .admin-profile-icon,
+  .admin-profile-icon i {
+    font-size: 4rem;
+  }
+
+  .admin-menu button {
+    font-size: 0.9rem;
+
+    padding: 0.6rem;
+  }
+}

@@ -1,0 +1,72 @@
+
+/* ROOT VARIABLES (from common.css) */
+:root {
+  --teal: #2e7066;
+  --teal_hover: #279e8c;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+/* BODY */
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  background-image: url("/images/A-Z-Sports/sports%20turf.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* DARK OVERLAY */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* INPUT FIX */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  appearance: textfield;
+}
+
+/* BUTTONS */
+.custom-bg {
+  background-color: var(--teal);
+  border: 1px solid var(--teal);
+}
+
+.custom-bg:hover {
+  background-color: var(--teal_hover);
+  border-color: var(--teal_hover);
+}
+
+/* ALERT */
+.custom-alert {
+  position: fixed;
+  top: 80px;
+  right: 25px;
+  z-index: 111;
+}
